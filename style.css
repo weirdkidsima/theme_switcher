@@ -1,0 +1,66 @@
+html {
+    --background: #dfe8eb;
+    --section: #f2f2f2;
+    --primary-text: #042f40;
+    --secondary-text: #324e59;
+    --button-background: #181818;
+    --button-text-color: blue;
+  }
+  
+  html[data-theme="dark"] {
+    --background: #121212;
+    --section: #181818;
+    --primary-text: white;
+    --secondary-text: #b3b3b3;
+    --button-background: #324e59;
+    --button-text-color: yellow;
+  }
+  
+  html.color-theme-in-transition,
+  html.color-theme-in-transition *,
+  html.color-theme-in-transition *:before,
+  html.color-theme-in-transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+  }
+  
+  h1 {
+    color: var(--primary-text);
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  section {
+    background-color: var(--section);
+    color: var(--secondary-text);
+  
+    text-align: center;
+    height: 500px;
+    border-radius: 1em;
+    padding: 0.5em 2em;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  
+  button {
+    background-color: transparent;
+    border: 1px solid var(--background);
+    color: var(--secondary-text);
+    padding: 0.3em 0.6em;
+    border-radius: 0.4em;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  button:hover {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+  }
+  
+  body {
+    background-color: var(--background);
+  }
+  
+  * {
+    font-family: "Oxanium", cursive;
+  }
